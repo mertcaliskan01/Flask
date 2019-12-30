@@ -1,0 +1,38 @@
+{% extends 'base.html' %} {% block head %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+{% endblock %} {% block body %}
+
+
+<div class="box">
+    <p>
+        <canvas class="graph" id="chart" name="birinci">SHOW</canvas>
+    </p>
+    <div>
+        <h1> Aylık Tahminler</h1>
+        <a href="#" class="buton" type="button" onclick="mert('chart','birinci',1.)">1.Şirket</a>
+        <a href="#" class="buton" type="button" onclick="mert('chart','birinci',2.)">2.Şirket</a>
+        <a href="#" class="buton" type="button" onclick="mert('chart','birinci',3.)">3.Şirket</a>
+        <a href="#" class="buton" type="button" onclick="mert('chart','birinci',4.)">4.Şirket</a>
+        <a href="#" class="buton" type="button" onclick="mert('chart','birinci',5.)">5.Şirket</a>
+
+    </div>
+
+    <div>
+        <h1> Haftalık Tahminler</h1>
+        <a href="#" class="buton" type="button" onclick="mert('chart','birinci',1.)">1.Şirket</a>
+        <a href="#" class="buton" type="button" onclick="mert('chart','birinci',1.)">2.Şirket</a>
+        <a href="#" class="buton" type="button" onclick="mert('chart','birinci',1.)">3.Şirket</a>
+        <a href="#" class="buton" type="button" onclick="mert('chart','birinci',1.)">4.Şirket</a>
+        <a href="#" class="buton" type="button" onclick="mert('chart','birinci',1.)">5.Şirket</a>
+    </div>
+
+    <div>
+        <h1> Günlük Tahminler</h1>
+        <a href="#" class="buton" type="button" onclick="mert('chart','birinci',1.)">1.Şirket</a>
+        <a href="#" class="buton" type="button" onclick="mert('chart','birinci',1.)">2.Şirket</a>
+        <a href="#" class="buton" type="button" onclick="mert('chart','birinci',1.)">3.Şirket</a>
+        <a href="#" class="buton" type="button" onclick="mert('chart','birinci',1.)">4.Şirket</a>
+        <a href="#" class="buton" type="button" onclick="mert('chart','birinci',1.)">5.Şirket</a>
+    </div>
+
+    {% endblock %}
